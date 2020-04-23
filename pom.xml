@@ -61,7 +61,8 @@
         <spark-avro.version>2.4.0</spark-avro.version>
         <scalikejdbc.version>2.5.0</scalikejdbc.version>
         <zkclient.version>0.3</zkclient.version>
-        <dmp.scope>provided</dmp.scope><!--compile provided-->
+        <!--compile为本地运行，provided为集群运行-->
+        <dmp.scope>compile</dmp.scope><!--compile provided-->
     </properties>
 
     <repositories>
