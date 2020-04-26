@@ -32,12 +32,18 @@ class MyCircularQueue(_k: Int) {
 
   /** Get the front item from the queue. */
   def Front(): Int = {
-     data(p_start)
+    if (isEmpty()) {
+      return -1
+    }
+     return data(p_start)
   }
 
   /** Get the last item from the queue. */
   def Rear(): Int = {
-    data(p_end)
+    if (isEmpty()) {
+      return -1
+    }
+    return  data(p_end-1)
   }
 
   /** Checks whether the circular queue is empty or not. */
